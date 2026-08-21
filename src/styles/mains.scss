@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: variaveis.$corDeFundo;
+    background-color: variaveis$corDeFundo;
 }
 
 @mixin text($fontSize: 16px){
