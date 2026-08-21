@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'plans';
 
 @font-face {
     font-family: Avenir;
@@ -25,13 +26,13 @@ body {
     background-color: variaveis.$corDeFundo;
 }
 
-@mixin text($fontSize: 16px){
+@mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10;
     color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 28px){
+@mixin title($fontSize: 28px) {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario;
 }
@@ -56,12 +57,26 @@ body {
     @include title;
 }
 
-.title--small{
+.title--small {
     @include title(28px)
 }
 
-.link-text{
+.link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario ;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+
 }

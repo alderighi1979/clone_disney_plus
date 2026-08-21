@@ -1,14 +1,14 @@
 @use 'variaveis';
 
 .shows{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 2vw 5.6vw;
+    min-height: 50vw;
     &__list{
         margin-top: 44px;
         display: none;
         grid-template-columns: repeat(3, 1fr);// 3 colunas de largura igual
         list-style: none; //tira os bullets da linha
-        gap: 24px;
+        gap: 20px;
 
         &--is-active{
             display: grid;
@@ -25,7 +25,7 @@
         justify-content: center;
         &__button{
             color: variaveis.$corTextoSecundario;
-            font-size: 20px;
+            font-size: 24px;
             border: none;
             background: none;
             text-transform: uppercase;
